@@ -1,9 +1,9 @@
 #!/bin/sh
 
 #Read Config
-INI=/home/pi/def/temper.conf
+INI=/home/pi/bin/temper.conf
 
-if [[ ! -f ${INI} ]]
+if [ ! -f ${INI} ]
 then
   logger -t [temper][Error] Config Not Found
   exit 1
